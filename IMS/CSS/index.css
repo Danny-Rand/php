@@ -1,0 +1,72 @@
+body#loginBody {
+    background: url('../Images/black-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial;
+}
+
+div.loginHeader {
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+div.loginHeader h1 {
+    font-size: 60px;
+    color: #b30000;
+    padding: 0px;
+    margin: 0px;
+    text-transform: uppercase;
+}
+div.loginHeader p {
+    font-size: 36px;
+    color: #f7afaf;
+    margin: 0px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+div.loginHeader p::after {
+    content: '';
+    display: block;
+    height: 2px;
+    margin: 0 auto;
+    background: #f7afaf;
+}
+div.loginBody form{
+    margin: 0 auto;
+    width: 400px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+}
+div.loginInputsContainer {
+    margin-top: 10px;
+}
+div.loginInputsContainer input {
+    height: 30px;
+    width: 100%;
+    border: 2px solid #800020;
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+div.loginButtonContainer {
+    margin-top: 40px;
+    text-align: center;
+}
+div.loginButtonContainer button {
+    font-size: 20px;
+    padding: 10px 40px;
+    background: #b30000;
+    color: #ffffff;
+    border: none;
+}
+div#errorMessage {
+    position: relative;
+    width: 100%;
+    background: #ffffff;
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}

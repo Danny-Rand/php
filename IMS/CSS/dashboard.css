@@ -1,0 +1,189 @@
+#dashboardMainContainer {
+    display: flex;
+    flex-direction: row;
+}
+div.dashboardSidebar {
+    width: 20%;
+    background: #3b3636;
+    height: 100vh;
+}
+div.dashboardContentContainer {
+    width: 80%;
+    background: #7e727223;
+}
+h3.dashboardLogo {
+    color:#b30000;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+div.dashboardSidebarUser {
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ffffff;
+}
+div.dashboardSidebarUser img {
+    width: 60px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid #800020;
+    vertical-align: middle;
+}
+div.dashboardSidebarUser span {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: inline-block;
+}
+ul.dashboardMenuList {
+    padding: 10px;
+    margin-top: 10px;
+}
+ul.dashboardMenuList li {
+    list-style: none;
+    padding: 15px 15px;
+    text-transform: uppercase;
+}
+
+ul.dashboardMenuList li a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    font-size: 15px;
+}
+ul.dashboardMenuList li a {
+    font-size: 15px;
+}
+ul.dashboardMenuList li.menuActive {
+    background: #b30000;
+    color: #ffffff;
+    transition: 0.3s all;
+}
+ul.dashboardMenuList li:hover {
+    background: #b30000;
+}
+div.dashboardTopNav {
+    background: #ffffff;
+    padding: 20px;
+}
+div.dashboardTopNav a {
+    color: #5d5d5d;
+    font-size: 18px;
+    text-decoration: none;
+}
+a#logoutBtn {
+    float: right;
+}
+div.dashboardContent {
+    padding: 30px 10px 0 10px;
+}
+div.dashboardContentMain {
+    background: #ffffff;
+    min-height: 500px;
+    height: 80%;
+}
+form::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+form.dashboardForm {
+    width: 80%;
+    margin-left: 30px;
+    padding: 10px;
+    border: 2px solid #3b3636;
+    border-radius: 5px;
+    background: rgba(66, 66, 66, 0.5);
+}
+form input.dashboardFormInput {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ccc6be;
+    border-radius: 5px;
+}
+form label.userCredentials {
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+div.dashboardFormInputContainer {
+    margin-bottom: 15px;
+}
+div#userAddFormContainer {
+    padding-top: 5px;
+}
+button.dashboardFormBtn {
+    background: #b30000;
+    border: 1px solid rgba(66, 66, 66, 0.5);
+    color: #ffffff;
+    padding: 10px;
+    text-transform: uppercase;
+    float: right;
+}
+p.responseMessage {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 7px;
+    padding: 13.5px;
+}
+p.responseMessage__success {
+    background: #498649;
+}
+p.responseMessage__error {
+    background: #ff4646;
+}
+div.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+div.column {
+    width: 100%;
+}
+div.column-1 {
+    width: 41.67%;
+}
+div.column-2 {
+    width: 58.33%;
+}
+h1.addUserHeader {
+    color: #b30000;
+    font-size: 20px;
+    border-bottom: 1px solid #b30000;
+    padding-bottom: 10px;
+    padding: 10px;
+    margin-top: 0;
+    border-left: 4px solid #b30000;
+}
+table.userTable {
+    margin: 0 auto;
+}
+table.userTable, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table.userTable {
+    width: 93%;
+    margin-left: 20px;
+}
+table.userTable th {
+    font-size: 15px;
+    text-transform: uppercase;
+    background: #c7c7c7;
+}
+table.userTable td {
+    font-size: 14px;
+    text-align: center;
+    padding: 5px;
+}
+p.userCount {
+    font-size: 12px;
+    margin-right: 25px;
+    text-align: right;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #b30000;
+}
