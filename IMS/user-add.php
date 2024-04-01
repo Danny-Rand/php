@@ -4,6 +4,7 @@ session_start();
 if (!isset($_SESSION['user'])) header('location: index.php');
 $_SESSION['table'] = 'users';
 $user = $_SESSION['user'];
+$users = include('database/show-users.php');
 ?>
 
 <!DOCTYPE html>
@@ -28,6 +29,7 @@ $user = $_SESSION['user'];
                 <div class="dashboardContentMain">
                     <div class="row">
                         <div class="column column-1">
+                            <h1 class="addUserHeader"><i class="fa-solid fa-plus"></i> Insert User</h1>
                             <div id="userAddFormContainer">
                                 <form action="database/new-user.php" method="post" class="dashboardForm">
                                     <div class="dashboardFormInputContainer">
@@ -67,7 +69,35 @@ $user = $_SESSION['user'];
                             </div>
                         </div>
                         <div class="column column-2">
-                            Hello World!
+                            <h1 class="addUserHeader"><i class="fa-solid fa-list"></i> List of Users</h1>
+                            <div>
+                                <p class="userCount"> <?= count($users) ?> Users</p>
+                                <table class="userTable">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Username</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Email</th>
+                                            <th>Role</th>
+                                        <tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php foreach ($users as $index => $user) { ?>
+                                            <tr>
+                                                <td><?= $index + 1 ?></td>
+                                                <td><?= $user['username'] ?></td>
+                                                <td><?= $user['first_name'] ?></td>
+                                                <td><?= $user['last_name'] ?></td>
+                                                <td><?= $user['email'] ?></td>
+                                                <td><?= $user['role'] ?></td>
+
+                                            </tr>
+                                        <?php } ?>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>

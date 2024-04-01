@@ -132,11 +132,11 @@ form label.userCredentials {
 }
 
 div.dashboardFormInputContainer {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 div#userAddFormContainer {
-    padding-top: 5px;
+    padding-top: 1px;
 
 }
 
@@ -153,8 +153,8 @@ p.responseMessage {
     font-size: 15px;
     text-align: center;
     margin-top: 2px;
-    margin-left: 14px;
-    padding: 15px;
+    margin-left: 15px;
+    padding: 7px;
     width: 90%;
 }
 
@@ -194,9 +194,9 @@ h1.addUserHeader {
     color: #b30000;
     font-size: 20px;
     border-bottom: 1px solid #b30000;
-    padding-bottom: 10px;
     padding: 10px;
     margin-top: 0;
+    margin-bottom: 2px;
     border-left: 4px solid #b30000;
 }
 
@@ -212,27 +212,30 @@ td {
 }
 
 table.userTable {
-    width: 93%;
+    width: 94%;
     margin-left: 20px;
 }
 
 table.userTable th {
     font-size: 15px;
     text-transform: uppercase;
-    background: #c7c7c7;
+    background: rgba(66, 66, 66, 0.5);
+    text-align: center;
+    color: #ffffff;
 }
 
 table.userTable td {
     font-size: 14px;
     text-align: center;
-    padding: 5px;
+    padding: 2px;
 }
 
 p.userCount {
-    font-size: 12px;
-    margin-right: 25px;
+    font-size: 15px;
+    margin-right: 18px;
     text-align: right;
     font-weight: bold;
     text-transform: uppercase;
     color: #b30000;
+    margin-bottom: 0;
 }
