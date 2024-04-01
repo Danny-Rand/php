@@ -92,13 +92,14 @@ a#logoutBtn {
 }
 
 div.dashboardContent {
-    padding: 30px 10px 0 10px;
+    padding: 30px 10px 0 40px;
 }
 
 div.dashboardContentMain {
     background: #ffffff;
     min-height: 500px;
     height: 80%;
+    padding: 20px;
 }
 
 form::after {
@@ -108,8 +109,8 @@ form::after {
 }
 
 form.dashboardForm {
-    width: 80%;
-    margin-left: 100px;
+    width: 40%;
+    margin-left: 20px;
     padding: 10px;
     border: 2px solid #3b3636;
     border-radius: 5px;
@@ -135,6 +136,7 @@ div.dashboardFormInputContainer {
 
 div#userAddFormContainer {
     padding-top: 5px;
+
 }
 
 button.dashboardFormBtn {
@@ -173,11 +175,11 @@ div.column {
 }
 
 div.column-1 {
-    width: 41.67%;
+    width: 40%;
 }
 
 div.column-2 {
-    width: 58.33%;
+    width: 60%;
 }
 
 h1.addUserHeader {

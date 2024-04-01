@@ -10,13 +10,13 @@ $email = $_POST['email'];
 $password = $_POST['password'];
 
 //Password Hashing
-$encrypted = password_hash($password, PASSWORD_DEFAULT);
+// $encrypted = password_hash($password, PASSWORD_DEFAULT);
 
 try {
     $command = "INSERT INTO 
                         $table_name(username, first_name, last_name, email, password) 
                     VALUES 
-                        ('" . $username . "', '" . $first_name . "', '" . $last_name . "', '" . $email . "', '" . $encrypted . "')";
+                        ('" . $username . "', '" . $first_name . "', '" . $last_name . "', '" . $email . "', '" . $password . "')";
 
     //Shortcut for connecting to database
     include('connection.php');
