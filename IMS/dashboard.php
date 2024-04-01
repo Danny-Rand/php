@@ -25,7 +25,7 @@ $user = $_SESSION['user'];
             <?php include('partials/dashboard-topnav.php') ?>
             <div class="dashboardContent">
                 <div class="dashboardContentMain">
-
+                    
                 </div>
             </div>
         </div>

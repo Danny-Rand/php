@@ -2,6 +2,7 @@
 
 session_start();
 if (!isset($_SESSION['user'])) header('location: index.php');
+$_SESSION['table'] = 'users';
 $user = $_SESSION['user'];
 ?>
 
@@ -25,7 +26,32 @@ $user = $_SESSION['user'];
             <?php include('partials/dashboard-topnav.php') ?>
             <div class="dashboardContent">
                 <div class="dashboardContentMain">
-
+                    <div id="userAddFormContainer">
+                        <form action="database/new-user.php" method="post" class="dashboardForm">
+                            <div class="dashboardFormInputContainer">
+                                <label for="username" class="userCredentials">Username</label>
+                                <input type="text" class="dashboardFormInput" id="username" name="username">
+                            </div>
+                            <div class="dashboardFormInputContainer">
+                                <label for="first_name" class="userCredentials">First Name</label>
+                                <input type="text" class="dashboardFormInput" id="first_name" name="first_name">
+                            </div>
+                            <div class="dashboardFormInputContainer">
+                                <label for="last_name" class="userCredentials">Last Name</label>
+                                <input type="text" class="dashboardFormInput" id="last_name" name="last_name">
+                            </div>
+                            <div class="dashboardFormInputContainer">
+                                <label for="email" class="userCredentials">Email</label>
+                                <input type="text" class="dashboardFormInput" id="email" name="email">
+                            </div>
+                            <div class="dashboardFormInputContainer">
+                                <label for="password" class="userCredentials">Password</label>
+                                <input type="password" class="dashboardFormInput" id="password" name="password">
+                            </div>
+                            <input type="hidden" name="table" value="users">
+                            <button type="submit" class="dashboardFormBtn"><i class="fa-solid fa-plus"></i> Add User</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
