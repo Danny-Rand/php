@@ -11,13 +11,13 @@
                 <a href="./dashboard.php"><i class="fa-solid fa-gauge menuIcons"></i><span class="menuText"> Dashboard</span></a>
             </li>
             <li>
-                <a href="./inventory-management.php"><i class="fa-solid fa-boxes-stacked"></i><span class="menuText"> Inventory Management</span></a>
+                <a href="./inventory-management.php"><i class="fa-solid fa-boxes-stacked"></i><span class="menuText"> Inventory</span></a>
             </li>
             <li>
-                <a href="./order-management.php"><i class="fa-solid fa-file-invoice"></i></i><span class="menuText"> Order Management</span></a>
+                <a href="./order-management.php"><i class="fa-solid fa-file-invoice"></i></i><span class="menuText"> Orders</span></a>
             </li>
             <li>
-                <a href="./supplier-management.php"><i class="fa-solid fa-boxes-packing"></i><span class="menuText"> Supplier Management</span></a>
+                <a href="./supplier-management.php"><i class="fa-solid fa-boxes-packing"></i><span class="menuText"> Suppliers</span></a>
             </li>
             <li>
                 <a href="./user-add.php"><i class="fa-solid fa-user-plus"></i><span class="menuText"> Add User</span></a>

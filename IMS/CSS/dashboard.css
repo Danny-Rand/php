@@ -69,11 +69,12 @@ ul.dashboardMenuList li a {
 ul.dashboardMenuList li.menuActive {
     background: #b30000;
     color: #ffffff;
-    transition: 0.3s all;
+
 }
 
 ul.dashboardMenuList li:hover {
     background: #b30000;
+    transition: 0.3s all;
 }
 
 div.dashboardTopNav {
@@ -285,4 +286,13 @@ p.userCount {
 
 input[type="number"] {
     min-width: 50px;
+}
+
+div.table-responsive {
+    margin-left: 2px !important;
+    margin-right: 2px !important;
+}
+
+i.fa-solid.fa-right-from-bracket {
+    margin-right: 5px;
 }
