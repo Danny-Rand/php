@@ -25,9 +25,9 @@ $user = $_SESSION['user'];
         <div class="dashboardContentContainer" id="dashboardContentContainer">
             <?php include('partials/dashboard-topnav.php') ?>
             <div class="dashboardContent">
-                <div class="row">
-                    <div class="column">
-                        <div class="dashboardContentMain">
+                <div class="dashboardContentMain">
+                    <div class="row">
+                        <div class="column column-1">
                             <div id="userAddFormContainer">
                                 <form action="database/new-user.php" method="post" class="dashboardForm">
                                     <div class="dashboardFormInputContainer">
@@ -66,9 +66,9 @@ $user = $_SESSION['user'];
                                 } ?>
                             </div>
                         </div>
-                    </div>
-                    <div class="column">
-
+                        <div class="column column-2">
+                            Hello World!
+                        </div>
                     </div>
                 </div>
             </div>
