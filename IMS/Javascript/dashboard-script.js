@@ -10,7 +10,7 @@ toggleBtn.addEventListener('click', (event) => {
         userImage.style.width = '60px';
 
         menuIcons = document.getElementsByClassName('menuText');
-        for(var i=0; i < menuIcons.length; i++) {
+        for (var i = 0; i < menuIcons.length; i++) {
             menuIcons[i].style.display = 'none';
         }
 
@@ -23,7 +23,7 @@ toggleBtn.addEventListener('click', (event) => {
         userImage.style.width = '60px';
 
         menuIcons = document.getElementsByClassName('menuText');
-        for(var i=0; i < menuIcons.length; i++) {
+        for (var i = 0; i < menuIcons.length; i++) {
             menuIcons[i].style.display = 'inline-block';
         }
 
