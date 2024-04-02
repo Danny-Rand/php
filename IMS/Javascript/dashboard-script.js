@@ -18,6 +18,7 @@ toggleBtn.addEventListener('click', (event) => {
         sideBarIsOpen = false;
     } else {
         dashboardSidebar.style.width = '20%';
+        dashboardSidebar.style.transition = '0.3s all';
         dashboardContentContainer.style.width = '80%';
         dashboardLogo.style.fontSize = '40px';
         userImage.style.width = '60px';
