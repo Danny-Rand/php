@@ -1,5 +1,5 @@
 <div class="dashboardSidebar" id="dashboardSidebar">
-    <h3 class="dashboardLogo" id="dashboardLogo">IGAN'S</h3>
+    <h3 class="dashboardLogo" id="dashboardLogo">IMS</h3>
     <div class="dashboardSidebarUser">
         <img src="Images/no-user-image.jpg" alt="User Image" id="userImage" />
         <span><?= $user['first_name'] . ' ' . $user['last_name'] ?></span>

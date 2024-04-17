@@ -15,7 +15,7 @@ div.dashboardContentContainer {
 }
 
 h3.dashboardLogo {
-    color: #b30000;
+    color: #1877F2;
     font-size: 40px;
     text-align: center;
     margin-top: 0;
@@ -33,7 +33,7 @@ div.dashboardSidebarUser img {
     width: 60px;
     display: inline-block;
     border-radius: 50%;
-    border: 2px solid #800020;
+    border: 2px solid #1c18f2;
     vertical-align: middle;
 }
 
@@ -81,13 +81,13 @@ ul.dashboardMenuList li.liMainMenu a#subUserMenu i.mainMenuIconArrow {
 }
 
 ul.dashboardMenuList li.menuActive {
-    background: #b30000;
+    background: #1877F2;
     color: #ffffff;
 
 }
 
 ul.dashboardMenuList li:hover {
-    background: #b30000;
+    background: #1877F2;
     transition: 0.3s all;
 }
 
@@ -139,7 +139,7 @@ div.dashboardContent {
 div.dashboardContentMain {
     background: #ffffff;
     min-height: 510px;
-    height: 80%;
+    height: 80vh;
 }
 
 form::after {
@@ -182,7 +182,7 @@ div#userAddFormContainer {
 }
 
 button.dashboardFormBtn {
-    background: #b30000;
+    background: #1877F2;
     border: 1px solid rgba(66, 66, 66, 0.5);
     color: #ffffff;
     padding: 10px;
@@ -232,13 +232,13 @@ div.column-2 {
 }
 
 h1.addUserHeader {
-    color: #b30000;
+    color: #1877F2;
     font-size: 20px;
-    border-bottom: 1px solid #b30000;
+    border-bottom: 1px solid #1877F2;
     padding: 10px;
     margin-top: 0;
     margin-bottom: 2px;
-    border-left: 4px solid #b30000;
+    border-left: 4px solid #1877F2;
 }
 
 table.userTable {
@@ -277,7 +277,7 @@ p.userCount {
     text-align: right;
     font-weight: bold;
     text-transform: uppercase;
-    color: #b30000;
+    color: #1877F2;
     margin-bottom: 0;
 }
 

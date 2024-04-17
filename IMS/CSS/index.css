@@ -9,28 +9,16 @@ div.loginHeader {
     margin-bottom: 80px;
     margin-top: 20px;
 }
+
 div.loginHeader h1 {
     font-size: 60px;
-    color: #b30000;
+    color: #1877F2;
     padding: 0px;
     margin: 0px;
     text-transform: uppercase;
 }
-div.loginHeader p {
-    font-size: 36px;
-    color: #f7afaf;
-    margin: 0px;
-    text-transform: uppercase;
-    display: inline-block;
-}
-div.loginHeader p::after {
-    content: '';
-    display: block;
-    height: 2px;
-    margin: 0 auto;
-    background: #f7afaf;
-}
-div.loginBody form{
+
+div.loginBody form {
     margin: 0 auto;
     width: 400px;
     background: rgba(0, 0, 0, 0.5);
@@ -38,28 +26,33 @@ div.loginBody form{
     border: 2px solid #ffffff;
     border-radius: 8px;
 }
+
 div.loginInputsContainer {
     margin-top: 10px;
 }
+
 div.loginInputsContainer input {
     height: 30px;
     width: 100%;
-    border: 2px solid #800020;
+    border: 2px solid #1c18f2;
     font-size: 20px;
     padding: 5px;
     text-align: center;
 }
+
 div.loginButtonContainer {
     margin-top: 40px;
     text-align: center;
 }
+
 div.loginButtonContainer button {
     font-size: 20px;
     padding: 10px 40px;
-    background: #b30000;
+    background: #1877F2;
     color: #ffffff;
     border: none;
 }
+
 div#errorMessage {
     position: relative;
     width: 100%;

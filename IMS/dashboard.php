@@ -11,7 +11,7 @@ include('database/po-status-pie-graph.php');
 <html>
 
 <head>
-    <title>Dashboard - Igan's Budbod House IMS</title>
+    <title>Dashboard - Café Esque IMS</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">

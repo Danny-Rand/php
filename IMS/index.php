@@ -50,7 +50,7 @@ if ($_POST) {
 <html>
 
 <head>
-    <title>IMS Login - Igan's Budbod House IMS</title>
+    <title>IMS Login - Café Esque IMS</title>
     <link rel="stylesheet" type="text/css" href="CSS/index.css">
 </head>
 
@@ -62,8 +62,7 @@ if ($_POST) {
     <?php } ?>
     <div class="container">
         <div class="loginHeader">
-            <h1>Igan's Budbod House</h1>
-            <p>Inventory Management System</p>
+            <h1>Café Esque</h1>
         </div>
         <div class="loginBody">
             <form action="index.php" method="POST">
