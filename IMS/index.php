@@ -72,6 +72,16 @@ if ($_POST) {
                 <div class="loginInputsContainer">
                     <input placeholder="password" name="password" type="password" />
                 </div>
+                <div class="loginResetContainer">
+                    <?php 
+                    if (isset($_GET["newpwd"])) {
+                        if ($_GET["newpwd"] == "passwordupdated") {
+                            echo '<p class="reset-success">Your password has been reset.</p>';
+                        }
+                    }
+                    ?>
+                    <a href="reset-password.php">Forgot Password?</a>
+                </div>
                 <div class="loginButtonContainer">
                     <button>Log In</button>
                 </div>
