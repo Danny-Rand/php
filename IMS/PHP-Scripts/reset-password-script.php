@@ -1,5 +1,8 @@
 <?php
 
+ini_set('log_errors', 1);
+ini_set('error_log', 'reset-password-script.log');
+
 if (isset($_POST["reset-password-submit"])) {
 
     $selector = $_POST["selector"];
@@ -17,10 +20,10 @@ if (isset($_POST["reset-password-submit"])) {
 
     $currentDate = date("U");
 
-    require 'database/connection.php';
+    require '../Database/connection.php';
 
     try {
-        $sql = "SELECT * FROM pwdReset WHERE pwdResetSelector = ? AND pwdResetExpires >= ?";
+        $sql = "SELECT * FROM pwdreset WHERE pwdResetSelector = ? AND pwdResetExpires >= ?";
         $stmt = $conn->prepare($sql);
         $stmt->execute([$selector, $currentDate]);
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -32,11 +35,18 @@ if (isset($_POST["reset-password-submit"])) {
             $tokenBin = hex2bin($validator);
             $tokenCheck = password_verify($tokenBin, $row["pwdResetToken"]);
 
+            error_log("Selector: $selector");
+            error_log("Validator: $validator");
+            error_log("Token Bin: " . bin2hex($tokenBin));
+            error_log("Token Check: " . ($tokenCheck ? 'true' : 'false'));
+
             if ($tokenCheck === false) {
                 echo "You need to re-submit your reset request.";
                 exit();
             } elseif ($tokenCheck === true) {
                 $tokenEmail = $row['pwdResetEmail'];
+
+                error_log("Email: $tokenEmail");
 
                 $sql = "SELECT * FROM users WHERE email = ?";
                 $stmt = $conn->prepare($sql);
@@ -50,9 +60,10 @@ if (isset($_POST["reset-password-submit"])) {
                     $sql = "UPDATE users SET password = ? WHERE email = ?";
                     $stmt = $conn->prepare($sql);
                     $newPwdHash = password_hash($password, PASSWORD_DEFAULT);
+                    error_log("New hashed password: " . $newPwdHash);
                     $stmt->execute([$newPwdHash, $tokenEmail]);
 
-                    $sql = "DELETE FROM pwdReset WHERE pwdResetEmail = ?";
+                    $sql = "DELETE FROM pwdreset WHERE pwdResetEmail = ?";
                     $stmt = $conn->prepare($sql);
                     $stmt->execute([$tokenEmail]);
                     header("Location: ../index.php?newpwd=passwordupdated");
