@@ -5,7 +5,7 @@ if (isset($_SESSION['user'])) header('location: dashboard.php');
 
 $error_message = '';
 
-if ($_POST) {
+if (isset($_POST['submit'])) {
     include('Database/connection.php');
 
     $username = $_POST['username'];

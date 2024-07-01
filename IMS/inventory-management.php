@@ -42,6 +42,7 @@ $products = include('database/products.php');
                                     <th>Category</th>
                                     <th>Supplier</th>
                                     <th>Reorder Point</th>
+                                    <th>Critical Point</th>
                                     <th>Last Updated</th>
                                     <th>Description</th>
                                 </tr>
@@ -54,10 +55,11 @@ $products = include('database/products.php');
                                         <td><?php echo $product['sku'] ?></td>
                                         <td><?php echo $product['stock-qty'] ?></td>
                                         <td><?php echo $product['unit-price'] ?></td>
-                                        <td><?php echo $product['total-value'] ?></td>
+                                        <td><?php echo number_format($product['stock-qty'] * $product['unit-price'], 2, '.', ',') ?></td>
                                         <td><?php echo $product['category'] ?></td>
                                         <td><?php echo $product['supplier'] ?></td>
                                         <td><?php echo $product['reorder-point'] ?></td>
+                                        <td><?php echo $product['critical-point'] ?></td>
                                         <td><?php echo $product['last-updated'] ?></td>
                                         <td><?php echo $product['description'] ?></td>
                                     </tr>
@@ -75,6 +77,7 @@ $products = include('database/products.php');
                                     <th>Category</th>
                                     <th>Supplier</th>
                                     <th>Reorder Point</th>
+                                    <th>Critical Point</th>
                                     <th>Last Updated</th>
                                     <th>Description</th>
                                 </tr>
